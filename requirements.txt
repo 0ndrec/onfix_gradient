@@ -1,0 +1,14 @@
+aiohttp
+art
+better-proxy
+bs4
+colorama
+curl_cffi
+httpx
+imap_tools
+inquirer
+loguru
+pydantic
+rich
+urllib3
+yaml

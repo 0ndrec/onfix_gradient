@@ -1,0 +1,21 @@
+
+* `core`: This directory seems to contain the core functionality of the project, including:
+	+ `exceptions`: This directory contains custom exception classes, such as `APIError`.
+	+ `api.py`: This file likely contains API-related functionality.
+	+ `bot.py`: This file might contain bot-related functionality.
+	+ `auth.py`: This file probably contains authentication-related functionality.
+* `models`: This directory appears to contain data models, including:
+	+ `Account.py`: This file likely defines an `Account` class.
+	+ `Config.py`: This file might define a `Config` class.
+* `utils`: This directory contains utility functions and classes, including:
+	+ `load_config.py`: This file likely contains functions for loading configuration files.
+	+ `console.py`: This file might contain console-related functionality.
+	+ `file_utils.py`: This file probably contains file-related utility functions.
+	+ `imap_utils.py`: This file likely contains IMAP-related utility functions.
+	+ `messages_generator.py`: This file might contain message generation functionality.
+* `better_proxy`: This directory appears to contain a proxy-related library, including:
+	+ `proxy.py`: This file likely defines a `Proxy` class.
+* `console`: This directory contains console-related functionality, including:
+	+ `main.py`: This file might contain the main console application.
+* `run.py`: This file likely contains the main entry point for the project.
+* `requirements.txt`: This file lists the project's dependencies.
