@@ -1,0 +1,18 @@
+threads: 5
+invite_code: "DOIFI8"
+capsolver_api_key: "CAP"
+
+delay_before_start:
+  min: 5
+  max: 10
+
+imap_settings:
+  rambler.ru: imap.rambler.ru
+  hotmail.com: imap-mail.outlook.com
+  outlook.com: imap-mail.outlook.com
+  mail.ru: imap.mail.ru
+  gmail.com: imap.gmail.com
+  gmx.com: imap.gmx.com
+  yahoo.com: imap.mail.yahoo.com
+  gmx.net: imap.gmx.net
+  gmx.de: imap.gmx.net
