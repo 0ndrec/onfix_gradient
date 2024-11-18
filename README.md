@@ -1,100 +1,122 @@
+# Gradient Bot 🤖
 
-# Onfix_gradient
+![Console Screenshot](./images/console.png)
+![Logs Screenshot](./images/logs.png)
 
-This project is designed to provide core functionality related to APIs, bots, and utilities for console applications. Below is a breakdown of the key components and structure of the project.
+Gradient Bot is an advanced automation tool designed to streamline the process of account registration and farming on Gradient Network. With its powerful features and user-friendly interface, it offers a seamless experience for users looking to maximize their efficiency on the platform.
 
-## Directory Structure
+For purchase: https://t.me/gradient_network_bot
 
-### 1. `core`
-This directory contains the core functionality of the project.
+Price: 120$
 
-- **Subdirectories:**
-  - `exceptions`: Contains custom exception classes.
-    - **`APIError.py`**: Defines the `APIError` class for handling API-related exceptions.
+## ✨ Features
 
-- **Files:**
-  - **`api.py`**: Likely contains functionality for interacting with APIs.
-  - **`bot.py`**: Might include bot-related logic and operations.
-  - **`auth.py`**: Handles authentication processes and services.
+- 🔐 Automatic account registration
+- 🧩 Integrated captcha solving
+- ✉️ Email verification
+- 🔗 Invite code binding
+- 🌾 Automated farming
+- 📊 Export statistics to CSV
+- 🚀 Multi-threaded registration and export support
 
-### 2. `models`
-This directory is responsible for defining the project's data models.
+## 🖥️ System Requirements
 
-- **Files:**
-  - **`Account.py`**: Defines an `Account` class, which represents the user or service account in the system.
-  - **`Config.py`**: Defines a `Config` class that holds configuration details for the project.
+- Windows operating system
+- Stable internet connection
+- Valid email accounts for registration
+- Reliable proxies (optional but recommended)
 
-### 3. `utils`
-This directory contains utility functions that assist in various operations across the project.
+## 🛠️ Setup Guide
 
-- **Files:**
-  - **`load_config.py`**: Includes functions to load and handle configuration files.
-  - **`console.py`**: Contains console-related helper functions or classes.
-  - **`file_utils.py`**: Provides utilities for file handling.
-  - **`imap_utils.py`**: Handles IMAP-related functionality for email or messaging services.
-  - **`messages_generator.py`**: Contains message generation functions, likely for emails or notifications.
+1. Download the EXE file from the official source.
+2. Run the EXE file and complete the login process.
+3. Prepare the necessary configuration files as outlined in the next section.
 
-### 4. `console`
-This directory contains files related to the console interface or command-line application.
+## ⚙️ Configuration
 
-- **Files:**
-  - **`main.py`**: The main script to run the console-based application.
+### settings.yaml
 
-### 5. `run.py`
-This file is the main entry point for the project, orchestrating the execution of the entire application.
+This file contains the general settings for the bot. Here's an example configuration:
 
-### 6. `requirements.txt`
-This file lists the external dependencies required to run the project. It is used to install these dependencies with tools like `pip`.
+```yaml
+threads: 3
+invite_code: "DOIFI8"
+capsolver_api_key: "YOUR_CAPSOLVER_API_KEY"
 
-## Getting Started
+delay_before_start:
+  min: 5
+  max: 10
 
-To run the project, follow these steps:
+imap_settings:
+  rambler.ru: imap.rambler.ru
+  hotmail.com: imap-mail.outlook.com
+  outlook.com: imap-mail.outlook.com
+  mail.ru: imap.mail.ru
+  gmail.com: imap.gmail.com
+  gmx.com: imap.gmx.com
+  yahoo.com: imap.mail.yahoo.com
+  gmx.net: imap.gmx.net
+  gmx.de: imap.gmx.net
+```
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/repository.git
-   cd repository
-   ```
+### farm.txt
 
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+List the accounts for farming, one per line:
 
-3. Run the application:
-   ```bash
-   python run.py
-   ```
+```
+email1@example.com:password1
+email2@example.com:password2
+```
 
-## Key Components
+### register.txt
 
-- **Core Functionality**: Contains API interactions, bot services, and authentication mechanisms.
-- **Data Models**: Defines data structures such as `Account` and `Config` to manage user and configuration information.
-- **Utilities**: Offers helpful functions for file handling, console interaction, configuration management, and more.
+List the accounts for registration, one per line:
 
-## Contributing
+```
+newemail1@example.com:newpassword1
+newemail2@example.com:newpassword2
+```
 
-If you'd like to contribute to this project, please follow these steps:
+### proxies.txt
 
-1. Fork the repository.
-2. Create a feature branch:
-   ```bash
-   git checkout -b feature-branch
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add new feature"
-   ```
-4. Push the branch:
-   ```bash
-   git push origin feature-branch
-   ```
-5. Open a pull request.
+List them in this format:
 
-## License
+```
+http://user:pass@ip:port
+http://ip:port:user:pass
+http://ip:port@user:pass
+http://user:pass:ip:port
+```
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## 🚀 Usage Instructions
+
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/0ndrec/onfix_gradient.git
+    cd onfix_gradient
+    ```
+2. **Install the required dependencies**:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+
+## ⚠️ Important Notes
+
+!! To successfully close a session you need to use the exit button or press ctrl + c, otherwise the session will remain active
+
+- 🖥️ The Gradient Bot has support for 2 active sessions. You can run 2 versions on one PC, or 1 version on 2 PCs.
+- 📧 Verify that your email providers are correctly configured in the `imap_settings` section of `settings.yaml`.
+- 🧩 Maintain sufficient balance in your CapSolver account for uninterrupted captcha solving.
+
+## 🆘 Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| Email verification failures | Check IMAP settings in `settings.yaml` and ensure they match your email provider's requirements. |
+| Captcha-related problems | Verify your CapSolver API key and account balance. |
+| Unexpected farming interruptions | Review console output for error messages and confirm account credentials. |
 
 ---
 
-Feel free to modify the project structure or this documentation as needed!
+🌟 Thank you for choosing Gradient Bot! We're committed to enhancing your Gradient Network experience. 🌟
