@@ -22,9 +22,7 @@ Gradient Bot is an advanced automation tool designed to streamline the process o
 
 ## 🛠️ Setup Guide
 
-1. Download the EXE file from the official source.
-2. Run the EXE file and complete the login process.
-3. Prepare the necessary configuration files as outlined in the next section.
+Prepare the necessary configuration files as outlined in the next section.
 
 ## ⚙️ Configuration
 
