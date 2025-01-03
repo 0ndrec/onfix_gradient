@@ -35,12 +35,12 @@ class Bot(NodePayAPI):
             if not response or response.get('code', 0)!= 200:
                 logger.error(f'Account: {self.account_data.email} | Failed to send email verification: {response}')
                 return False
-        else:  
-            logger.info(f'Account: {self.account_data.email} | Email verification sent')
-            code = await check_email_for_code(self.account_data.imap_server, self.account_data.email, self.account_data.password)
-            if code is None:
-                logger.error(f'Account: {self.account_data.email} | Failed to get email verification code')
-                return False
+            else:  
+                logger.info(f'Account: {self.account_data.email} | Email verification sent')
+                code = await check_email_for_code(self.account_data.imap_server, self.account_data.email, self.account_data.password)
+                if code is None:
+                    logger.error(f'Account: {self.account_data.email} | Failed to get email verification code')
+                    return False
         except APIError as error:
             if error.error_message and error.error_message.strip() == 'EMAIL_EXISTS':
                 logger.warning(f'Account: {self.account_data.email} | Email already registered')
