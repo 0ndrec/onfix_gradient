@@ -32,7 +32,7 @@ This file contains the general settings for the bot. Here's an example configura
 
 ```yaml
 threads: 3
-invite_code: "DOIFI8"
+invite_code: "QYH4ZW"
 capsolver_api_key: "YOUR_CAPSOLVER_API_KEY"
 
 delay_before_start:
